@@ -1,0 +1,22 @@
+galaxy_info:
+  author: digimokan
+  description: "Install and configure the Yazi file manager"
+  license: "MIT"
+  min_ansible_version: 2.7
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Archlinux
+      versions:
+        - all
+    - name: FreeBSD
+      versions:
+        - all
+  galaxy_tags:
+    - ubuntu
+    - archlinux
+    - freebsd
+    - yazi
+    - file_manager
+

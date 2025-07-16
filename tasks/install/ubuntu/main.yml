@@ -1,0 +1,15 @@
+- name: "Check that 'yazi_snap_main_cmd' snap package command is provided"
+  ansible.builtin.assert:
+    that: "{{ yazi_snap_main_cmd != 'false' }}"
+    fail_msg: "yazi_snap_main_cmd must be set to the snap package executable command"
+    quiet: true
+
+- name: "Install the 'yazi' snap package"
+  community.general.snap:
+    # ref: https://yazi-rs.github.io/docs/installation#snapcraft
+    name: "yazi"
+    state: present
+    classic: true
+  become: true
+  become_user: root
+

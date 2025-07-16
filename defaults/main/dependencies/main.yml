@@ -1,0 +1,6 @@
+# user name of main Yazi user
+yazi_user_name: "user2"
+
+# snap package command (for OSs that install Yazi via the snap)
+yazi_snap_main_cmd: 'false'
+
