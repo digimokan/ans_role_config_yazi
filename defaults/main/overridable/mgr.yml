@@ -15,16 +15,16 @@ yazi_column_layout_ratio: "2, 3, 4"
 yazi_file_sort_method: "natural"
 
 # whether to sort displayed files case sensitive
-yazi_file_sort_case_sensitive: false
+yazi_file_sort_case_sensitive: "false"
 
 # whether to sort displayed files with directories listed first
-yazi_file_sort_list_dirs_first: true
+yazi_file_sort_list_dirs_first: "true"
 
 # whether to show hidden files in list of displayed files
-yazi_file_list_show_hidden_files: true
+yazi_file_list_show_hidden_files: "true"
 
 # whether to show file symlink after filename
-yazi_show_symlink_after_filename: true
+yazi_show_symlink_after_filename: "true"
 
 # info to show on right side of the center column:
 #   "none", "size", "btime", "mtime", "permissions", "owner"
