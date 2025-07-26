@@ -3,3 +3,15 @@
 # Ref:
 #   https://yazi-rs.github.io/docs/configuration/overview
 
+[mgr]
+
+title_format = "{{ yazi_terminal_title_format }}"
+ratio = [{{ yazi_column_layout_ratio }}]
+sort_by = "{{ yazi_file_sort_method }}"
+sort_senstive = {{ yazi_file_sort_case_sensitive }}
+sort_dir_first = {{ yazi_file_sort_list_dirs_first }}
+show_hidden = {{ yazi_file_list_show_hidden_files }}
+show_symlink = {{ yazi_show_symlink_after_filename }}
+linemode = "{{ yazi_file_column_extra_info_to_show }}"
+scrolloff = {{ yazi_file_column_scroll_offset_num_rows }}
+

@@ -1,0 +1,35 @@
+# Ref: https://yazi-rs.github.io/docs/configuration/yazi#mgr
+
+# terminal title format:
+#   - empty string for no title update
+#   - only available placeholder is "{cwd}" (working dir)
+yazi_terminal_title_format: "Yazi - {cwd}"
+
+# layout ratio for the left, center, and right columns (0 hides the column)
+yazi_column_layout_ratio: "2, 3, 4"
+
+# method of sorting displayed files:
+#   "none", "mtime", "btime", "extension", "alphabetical", "natural", "size",
+#   "random"
+# Note: "natural" is alphabetical with natural 1, 2, 10 ordering
+yazi_file_sort_method: "natural"
+
+# whether to sort displayed files case sensitive
+yazi_file_sort_case_sensitive: false
+
+# whether to sort displayed files with directories listed first
+yazi_file_sort_list_dirs_first: true
+
+# whether to show hidden files in list of displayed files
+yazi_file_list_show_hidden_files: true
+
+# whether to show file symlink after filename
+yazi_show_symlink_after_filename: true
+
+# info to show on right side of the center column:
+#   "none", "size", "btime", "mtime", "permissions", "owner"
+yazi_file_column_extra_info_to_show: "size"
+
+# in file column, keep this many rows between cursor and top/bottom of column
+yazi_file_column_scroll_offset_num_rows: 3
+
