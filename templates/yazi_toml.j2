@@ -15,3 +15,12 @@ show_symlink = {{ yazi_show_symlink_after_filename }}
 linemode = "{{ yazi_file_column_extra_info_to_show }}"
 scrolloff = {{ yazi_file_column_scroll_offset_num_rows }}
 
+[preview]
+
+wrap = "{{ 'yes' if yazi_long_code_preview_lines else 'no' }}"
+tab_size = {{ yazi_num_spaces_per_tab_char }}
+cache_dir = "{{ yazi_image_cache_dir }}"
+image_delay = {{ yazi_image_preview_delay_ms }}
+image_filter = "{{ yazi_image_preview_algorithm }}"
+image_quality = {{ yazi_image_preview_quality }}
+
