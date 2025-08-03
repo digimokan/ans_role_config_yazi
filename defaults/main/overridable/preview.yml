@@ -6,10 +6,8 @@ yazi_long_code_preview_lines: false
 # number of spaces to show per tab character
 yazi_num_spaces_per_tab_char: 2
 
-# image cache dir (if persistent, cache will survive reboots)
-# recommended persistent cache var: yazi_image_cache_dir
-# Note: clear cache with "yazi --clear-cache"
-yazi_image_cache_dir: "/tmp/yazi_imache_cache"
+# image cache dir (note: clear cache with "yazi --clear-cache")
+yazi_image_cache_dir: "{{ yazi_default_temp_image_cache_dir }}"
 
 # delay before sending image preview data to the terminal
 yazi_image_preview_delay_ms: 30

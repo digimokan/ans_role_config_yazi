@@ -1,7 +1,8 @@
 # user Yazi config file path
 yazi_config_file_path: "/home/{{ yazi_user_name }}/.config/yazi/yazi.toml"
 
-# recommended persistent user Yazi image cache dir
+# recommended persistent/temporary user Yazi image cache dir
 # see actual path var: yazi_image_cache_dir
-yazi_default_image_cache_dir: "/home/{{ yazi_user_name }}/.local/state/yazi/image_cache"
+yazi_default_persistent_image_cache_dir: "/home/{{ yazi_user_name }}/.local/state/yazi/image_cache"
+yazi_default_temp_image_cache_dir: "/tmp/yazi_image_cache"
 

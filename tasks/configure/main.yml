@@ -7,10 +7,10 @@
 
 - name: "Create user image cache directory, if not exist"
   ansible.builtin.file:
-    path: "{{ yazi_image_cache_dir | dirname }}"
+    path: "{{ yazi_image_cache_dir }}"
     state: directory
   become: true
-  become_user: "{{ yazi_image_cache_dir }}"
+  become_user: "{{ yazi_user_name }}"
 
 - name: "Configure all Yazi behavior in '{{ yazi_config_file_path }}'"
   ansible.builtin.template:
