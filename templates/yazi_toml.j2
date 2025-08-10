@@ -24,3 +24,60 @@ image_delay = {{ yazi_image_preview_delay_ms }}
 image_filter = "{{ yazi_image_preview_algorithm }}"
 image_quality = {{ yazi_image_preview_quality }}
 
+[opener]
+
+text_file_openers = [
+{% for prog in yazi_open_text_files_with %}
+{ run = '{{ prog }} "${@}"', block = false, orphan = true, for = "unix" },
+{% endfor %}
+]
+
+image_file_openers = [
+{% for prog in yazi_open_image_files_with %}
+{ run = '{{ prog }} "${@}"', block = false, orphan = true, for = "unix" },
+{% endfor %}
+]
+
+office_file_openers = [
+{% for prog in yazi_open_office_files_with %}
+{ run = '{{ prog }} "${@}"', block = false, orphan = true, for = "unix" },
+{% endfor %}
+]
+
+pdf_file_openers = [
+{% for prog in yazi_open_pdf_files_with %}
+{ run = '{{ prog }} "${@}"', block = false, orphan = true, for = "unix" },
+{% endfor %}
+]
+
+audio_file_openers = [
+{% for prog in yazi_open_audio_files_with %}
+{ run = '{{ prog }} "${@}"', block = false, orphan = true, for = "unix" },
+{% endfor %}
+]
+
+video_file_openers = [
+{% for prog in yazi_open_video_files_with %}
+{ run = '{{ prog }} "${@}"', block = false, orphan = true, for = "unix" },
+{% endfor %}
+]
+
+[open]
+
+rules = [
+  { mime = "application/pdf", use = "pdf_file_openers" },
+  { mime = "image/vnd.djvu", use = "pdf_file_openers" },
+  { mime = "application/xml", use = "text_file_openers" },
+  { mime = "application/json", use = "text_file_openers" },
+  { mime = "text/rtf", use = "office_file_openers" },
+  { mime = "application/vnd.oasis.opendocument.*", use = "office_file_openers" },
+  { mime = "application/vnd.openxmlformats-officedocument.*", use = "office_file_openers" },
+  { mime = "application/msword", use = "office_file_openers" },
+  { mime = "application/vnd.ms-excel", use = "office_file_openers" },
+  { mime = "application/vnd.ms-powerpoint", use = "office_file_openers" },
+  { mime = "image/*", use = "image_file_openers" },
+  { mime = "text/*", use = "text_file_openers" },
+  { mime = "audio/*", use = "audio_file_openers" },
+  { mime = "video/*", use = "video_file_openers" },
+]
+

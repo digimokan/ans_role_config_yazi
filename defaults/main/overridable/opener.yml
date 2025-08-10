@@ -1,0 +1,24 @@
+# list of programs to open image (jpg, png, gif, etc) files with, by priority
+yazi_open_text_files_with: []
+# open_image_files_with: [ 'nvim', 'libreoffice' ]
+
+# list of programs to open image (jpg, png, gif, etc) files with, by priority
+yazi_open_image_files_with: []
+# open_image_files_with: [ 'feh', 'gimp' ]
+
+# list of programs to open office (doc, odt, xls, etc) files with, by priority
+yazi_open_office_files_with: []
+# open_office_files_with: [ 'libreoffice', 'ooffice' ]
+
+# list of programs to open pdf (and deja-vu, etc) files with, by priority
+yazi_open_pdf_files_with: []
+# open_audio_files_with: [ 'evince', 'zathura' ]
+
+# list of programs to open audio files with, by priority
+yazi_open_audio_files_with: []
+# open_audio_files_with: [ 'vlc', 'mpv' ]
+
+# list of programs to open video files with, by priority
+yazi_open_video_files_with: []
+# open_video_files_with: [ 'vlc', 'mpv' ]
+
