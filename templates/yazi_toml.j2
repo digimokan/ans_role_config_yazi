@@ -65,19 +65,28 @@ video_file_openers = [
 [open]
 
 rules = [
+  # pdf files
   { mime = "application/pdf", use = "pdf_file_openers" },
   { mime = "image/vnd.djvu", use = "pdf_file_openers" },
+  # specialized plain-text files
   { mime = "application/xml", use = "text_file_openers" },
   { mime = "application/json", use = "text_file_openers" },
+  # rich-text-format files
   { mime = "text/rtf", use = "office_file_openers" },
-  { mime = "application/vnd.oasis.opendocument.*", use = "office_file_openers" },
-  { mime = "application/vnd.openxmlformats-officedocument.*", use = "office_file_openers" },
-  { mime = "application/msword", use = "office_file_openers" },
-  { mime = "application/vnd.ms-excel", use = "office_file_openers" },
-  { mime = "application/vnd.ms-powerpoint", use = "office_file_openers" },
+  # open-format office files
+  { mime = "application/*opendocument.*", use = "office_file_openers" },
+  # MS-Office "OpenXML" office files
+  { mime = "application/*officedocument.*", use = "office_file_openers" },
+  # MS-Office legacy office files
+  { mime = "application/*msword", use = "office_file_openers" },
+  { mime = "application/*ms-excel", use = "office_file_openers" },
+  { mime = "application/*ms-powerpoint", use = "office_file_openers" },
   { mime = "image/*", use = "image_file_openers" },
+  # general plain-text files
   { mime = "text/*", use = "text_file_openers" },
+  # general audio files
   { mime = "audio/*", use = "audio_file_openers" },
+  # general video files
   { mime = "video/*", use = "video_file_openers" },
 ]
 
