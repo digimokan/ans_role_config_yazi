@@ -1,24 +1,43 @@
-# list of programs to open image (jpg, png, gif, etc) files with, by priority
-yazi_open_text_files_with: []
-# open_image_files_with: [ 'nvim', 'libreoffice' ]
+# cmd to run to start the terminal emulator
+yazi_start_term_emulator: "xterm"
+
+# arg to pass to start_term_emulator to start in a specified directory
+yazi_term_arg_set_dir: "--cwd "
+
+# arg to pass to start_term_emulator to exec a cmd
+yazi_term_arg_exec: "-e "
+
+# list of console programs to open text files with, by priority
+# first program is the default opener
+yazi_open_text_files_with_console: []
+# yazi_open_text_files_with_console: [ 'nvim', 'emacs' ]
+
+# list of GUI programs to open text files with, by priority
+yazi_open_text_files_with_gui: []
+# yazi_open_text_files_with_gui: [ 'libreoffice', 'ooffice' ]
 
 # list of programs to open image (jpg, png, gif, etc) files with, by priority
+# first program is the default opener
 yazi_open_image_files_with: []
-# open_image_files_with: [ 'feh', 'gimp' ]
+# yazi_open_image_files_with: [ 'feh', 'gimp' ]
 
 # list of programs to open office (doc, odt, xls, etc) files with, by priority
+# first program is the default opener
 yazi_open_office_files_with: []
-# open_office_files_with: [ 'libreoffice', 'ooffice' ]
+# yazi_open_office_files_with: [ 'libreoffice', 'ooffice' ]
 
 # list of programs to open pdf (and deja-vu, etc) files with, by priority
+# first program is the default opener
 yazi_open_pdf_files_with: []
-# open_audio_files_with: [ 'evince', 'zathura' ]
+# yazi_open_pdf_files_with: [ 'evince', 'zathura' ]
 
 # list of programs to open audio files with, by priority
+# first program is the default opener
 yazi_open_audio_files_with: []
-# open_audio_files_with: [ 'vlc', 'mpv' ]
+# yazi_open_audio_files_with: [ 'vlc', 'mpv' ]
 
 # list of programs to open video files with, by priority
+# first program is the default opener
 yazi_open_video_files_with: []
-# open_video_files_with: [ 'vlc', 'mpv' ]
+# yazi_open_video_files_with: [ 'vlc', 'mpv' ]
 

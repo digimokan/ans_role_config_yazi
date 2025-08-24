@@ -27,7 +27,10 @@ image_quality = {{ yazi_image_preview_quality }}
 [opener]
 
 text_file_openers = [
-{% for prog in yazi_open_text_files_with %}
+{% for prog in yazi_open_text_files_with_console %}
+{ run = "{{ yazi_start_term_emulator }} {{ yazi_term_arg_exec }} \"{{ prog }} '${@}'\"", block = false, orphan = true, for = "unix" },
+{% endfor %}
+{% for prog in yazi_open_text_files_with_gui %}
 { run = "{{ prog }} '${@}'", block = false, orphan = true, for = "unix" },
 {% endfor %}
 ]
