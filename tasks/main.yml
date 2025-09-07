@@ -1,6 +1,9 @@
 - name: "Install the Yazi file manager"
   ansible.builtin.include_tasks: install/main.yml
 
+- name: "Export Yazi commands for use with external roles"
+  ansible.builtin.include_tasks: export_cmds/main.yml
+
 - name: "Configure the Yazi file manager"
   ansible.builtin.include_tasks: configure/main.yml
 

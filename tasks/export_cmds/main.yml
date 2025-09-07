@@ -1,0 +1,7 @@
+- name: "Set facts for ext roles"
+  ansible.builtin.set_fact:
+    # command to execute to start Yazi:
+    yazi_main_cmd: 'yazi'
+    # command to execute to start Yazi in the last working dir
+    yazi_in_last_dir_cmd: "{{ yazi_user_custom_scripts_dir }}/yazi_in_last_dir.sh"
+

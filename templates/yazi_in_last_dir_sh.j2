@@ -1,0 +1,26 @@
+#!/bin/sh
+# vim: set filetype=sh:
+# PURPOSE:
+#   1. When Yazi quits, store the last dir switched to.
+#   2. On next startup, switch to the stored dir.
+
+last_dir_save_file="{{ yazi_last_saved_dir_file_path }}"
+
+change_to_last_dir_if_it_exists() {
+  if [ -f "${last_dir_save_file}" ]; then
+    cd "$(cat "${last_dir_save_file}")" || return
+  fi
+}
+
+start_yazi() {
+  # Note: tells Yazi to store the last dir in the save-file, on quit
+  yazi --cwd-file "${last_dir_save_file}"
+}
+
+main() {
+  change_to_last_dir_if_it_exists
+  start_yazi
+}
+
+main
+

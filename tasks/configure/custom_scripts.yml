@@ -1,0 +1,21 @@
+- name: "Create user last-saved-dir-file directory, if not exist"
+  ansible.builtin.file:
+    path: "{{ yazi_last_saved_dir_file_path | dirname }}"
+    state: directory
+  become: true
+  become_user: "{{ yazi_user_name }}"
+
+- name: "Create user custom scripts directory, if not exist"
+  ansible.builtin.file:
+    path: "{{ yazi_user_custom_scripts_dir }}"
+    state: directory
+  become: true
+  become_user: "{{ yazi_user_name }}"
+
+- name: "Create Yazi-in-last-dir custom script at '{{ yazi_in_last_dir_cmd }}'"
+  ansible.builtin.template:
+    dest: "{{ yazi_in_last_dir_cmd }}"
+    src: "yazi_in_last_dir_sh.j2"
+  become: true
+  become_user: "{{ yazi_user_name }}"
+

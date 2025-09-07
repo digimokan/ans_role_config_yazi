@@ -1,0 +1,11 @@
+# vim: set filetype=toml:
+# ANSIBLE-MANAGED CONFIGURATION FILE
+# Ref:
+#  https://yazi-rs.github.io/docs/configuration/keymap
+
+[mgr]
+
+keymap = [
+  { on = "{{ yazi_keymap_escape_or_cancel }}", run = "escape --all", desc = "Cancel or escape current action or mode" },
+]
+

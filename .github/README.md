@@ -70,7 +70,7 @@ Vars with default values, which can be overridden in the playbook:
 
 Vars defined by this role, exported with `public: true`, for use in other roles:
 
-  * [export](../defaults/main/export/commands.yml)
+  * [export](../tasks/export_cmds/main.yml)
 
 ## Contributing
 

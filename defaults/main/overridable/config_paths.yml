@@ -6,3 +6,9 @@ yazi_config_file_path: "/home/{{ yazi_user_name }}/.config/yazi/yazi.toml"
 yazi_default_persistent_image_cache_dir: "/home/{{ yazi_user_name }}/.local/state/yazi/image_cache"
 yazi_default_temp_image_cache_dir: "/tmp/yazi_image_cache"
 
+# path to user custom scripts dir
+yazi_user_custom_scripts_dir: "/home/{{ yazi_user_name }}/.local/share/yazi/scripts"
+
+# path to text file that will contain the last dir open in Yazi, on quit
+yazi_last_saved_dir_file_path: "/home/{{ yazi_user_name }}/.local/state/yazi/last_saved_dir.txt"
+
