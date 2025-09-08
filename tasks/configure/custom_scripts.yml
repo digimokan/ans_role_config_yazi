@@ -16,6 +16,7 @@
   ansible.builtin.template:
     dest: "{{ yazi_in_last_dir_cmd }}"
     src: "yazi_in_last_dir_sh.j2"
+    mode: '755'
   become: true
   become_user: "{{ yazi_user_name }}"
 
