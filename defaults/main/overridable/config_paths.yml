@@ -1,5 +1,6 @@
-# user Yazi config file path
+# user Yazi config file paths
 yazi_config_file_path: "/home/{{ yazi_user_name }}/.config/yazi/yazi.toml"
+yazi_keymap_file_path: "/home/{{ yazi_user_name }}/.config/yazi/keymap.toml"
 
 # recommended persistent/temporary user Yazi image cache dir
 # see actual path var: yazi_image_cache_dir

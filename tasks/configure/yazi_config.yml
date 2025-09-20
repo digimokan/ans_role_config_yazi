@@ -19,3 +19,10 @@
   become: true
   become_user: "{{ yazi_user_name }}"
 
+- name: "Configure all Yazi keymaps in '{{ yazi_keymap_file_path }}'"
+  ansible.builtin.template:
+    dest: "{{ yazi_keymap_file_path }}"
+    src: "keymap_toml.j2"
+  become: true
+  become_user: "{{ yazi_user_name }}"
+
