@@ -25,6 +25,6 @@ yazi_user_download_dir: "{{ yazi_user_home_dir }}/Downloads"
 yazi_user_music_dir: "{{ yazi_user_home_dir }}/Music"
 yazi_user_pictures_dir: "{{ yazi_user_home_dir }}/Pictures"
 yazi_user_videos_dir: "{{ yazi_user_home_dir }}/Videos"
-yazi_user_trash_dir: "{{ yazi_user_home_dir }}/.trash"
+yazi_user_trash_dir: "{{ yazi_user_home_dir }}/Trash"
 yazi_user_devel_dir: "{{ yazi_user_home_dir }}/Devel"
 
