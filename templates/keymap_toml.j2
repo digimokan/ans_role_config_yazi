@@ -39,6 +39,6 @@ keymap = [
   { on = {{ yazi_keymap_jump_to_user_devel_dir }}, run = "cd \"{{ yazi_user_devel_dir }}\"", desc = "Go to devel dir" },
   {% for keymap in yazi_extra_keymaps_jump_to_dir -%}
   {{ "{ on = " }}{{ keymap.key_presses }}{{ ", run = \"cd \\\"" }}{{ keymap.dir }}{{ "\\\"\", desc = \"" }}{{ keymap.descrip }}{{ "\" }," }}
-  {%- endfor %}
+  {%- endfor -%}
 ]
 
