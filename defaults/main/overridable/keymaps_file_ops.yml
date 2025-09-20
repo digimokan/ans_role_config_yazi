@@ -23,6 +23,7 @@ yazi_keymap_show_files_create_times: '[ "m", "c" ]'
 yazi_keymap_show_files_perms: '[ "m", "p" ]'
 yazi_keymap_show_files_owners: '[ "m", "o" ]'
 
+yazi_keymap_sort_files_by_names: '[ "z", "n" ]'
 yazi_keymap_sort_files_by_sizes: '[ "z", "s" ]'
 yazi_keymap_sort_files_by_mtimes: '[ "z", "m" ]'
 yazi_keymap_sort_files_by_create_times: '[ "z", "c" ]'

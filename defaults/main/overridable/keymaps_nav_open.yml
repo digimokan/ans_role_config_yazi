@@ -1,6 +1,7 @@
 # Ref: https://yazi-rs.github.io/docs/configuration/keymap
 
 yazi_keymap_escape_or_cancel: '"<Esc>"'
+yazi_keymap_keymaps_help_menu: '"?"'
 yazi_keymap_quit: '"q"'
 yazi_keymap_refresh: '"<Space>"'
 yazi_keymap_nav_down_one_row: '"j"'
