@@ -9,7 +9,7 @@ keymap = [
   # General / Navigation
   { on = {{ yazi_keymap_escape_or_cancel }}, run = "escape --all", desc = "Cancel or escape current action or mode" },
   { on = {{ yazi_keymap_quit }}, run = "quit", desc = "Quit yazi" },
-  { on = {{ yazi_keymap_refresh }}, run = ["arrow 1", "leave", "enter", "arrow -1"], desc = "Refresh file listing" },
+  { on = {{ yazi_keymap_refresh }}, run = ["arrow 1", "leave", "enter", "arrow -1", "escape --select"], desc = "Refresh file listing" },
   { on = {{ yazi_keymap_nav_down_one_row }}, run = "arrow 1", desc = "Nav down one row" },
   { on = {{ yazi_keymap_nav_up_one_row }}, run = "arrow -1", desc = "Nav up one row" },
   { on = {{ yazi_keymap_nav_last_row }}, run = "arrow bot", desc = "Nav to last row" },
@@ -45,7 +45,7 @@ keymap = [
   # Selection
   { on = {{ yazi_keymap_toggle_select_file }}, run = ["toggle", "arrow 1"], desc = "Select/deselect file" },
   { on = {{ yazi_keymap_toggle_select_all_files }}, run = "toggle_all --state=on", desc = "Select all files" },
-  { on = {{ yazi_keymap_toggle_deselect_all_files }}, run = ["toggle_all --state=off", "unyank"], desc = "Deselect all files" },
+  { on = {{ yazi_keymap_toggle_deselect_all_files }}, run = ["escape --select", "unyank"], desc = "Deselect all files" },
   { on = {{ yazi_keymap_visual_mode }}, run = "visual_mode", desc = "Enter visual select mode" },
 
   # Open File(s)
@@ -53,12 +53,12 @@ keymap = [
   { on = {{ yazi_keymap_open_file_interactive }}, run = "open --interactive", desc = "Open file (interactive)" },
 
   # Yank/Cut/Delete File(s)
-  { on = {{ yazi_keymap_yank_file }}, run = "yank", desc = "Yank file(s)" },
-  { on = {{ yazi_keymap_cut_file }}, run = "yank --cut", desc = "Cut file(s)" },
-  { on = {{ yazi_keymap_paste_file }}, run = "paste", desc = "Paste cut/yanked file(s)" },
-  { on = {{ yazi_keymap_paste_symlink_to_file_rel_path }}, run = "link", desc = "Paste relative symlink to yanked file(s)" },
-  { on = {{ yazi_keymap_paste_symlink_to_file_abs_path }}, run = "link --relative", desc = "Paste absolute symlink to yanked file(s)" },
-  { on = {{ yazi_keymap_trash_file }}, run = "shell '{{ yazi_gnu_coreutils_mv_cmd }} --backup=numbered \"${@}\" \"{{ yazi_user_trash_dir }}/\"'", desc = "Trash file(s)" },
-  { on = {{ yazi_keymap_delete_file }}, run = "remove --permanently", desc = "Delete file(s)" },
+  { on = {{ yazi_keymap_yank_file }}, run = ["yank", "escape --select"], desc = "Yank file(s)" },
+  { on = {{ yazi_keymap_cut_file }}, run = ["yank --cut", "escape --select"], desc = "Cut file(s)" },
+  { on = {{ yazi_keymap_paste_file }}, run = ["paste", "escape --select"], desc = "Paste cut/yanked file(s)" },
+  { on = {{ yazi_keymap_paste_symlink_to_file_rel_path }}, run = ["link --relative", "escape --select"], desc = "Paste relative symlink to yanked file(s)" },
+  { on = {{ yazi_keymap_paste_symlink_to_file_abs_path }}, run = ["link", "escape --select"], desc = "Paste absolute symlink to yanked file(s)" },
+  { on = {{ yazi_keymap_trash_file }}, run = ["shell '{{ yazi_gnu_coreutils_mv_cmd }} --backup=numbered \"${@}\" \"{{ yazi_user_trash_dir }}/\"'", "escape --select"], desc = "Trash file(s)" },
+  { on = {{ yazi_keymap_delete_file }}, run = ["remove --permanently", "escape --select"], desc = "Delete file(s)" },
 ]
 
