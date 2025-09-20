@@ -15,3 +15,7 @@ yazi_keymap_scroll_prev_window_down: '"<Down>"'
 yazi_keymap_scroll_prev_window_up: '"<Up>"'
 yazi_keymap_show_prev_window_file_info: '"i"'
 
+yazi_keymap_toggle_select_file: '"t"'
+yazi_keymap_toggle_select_all_files: '"V"'
+yazi_keymap_visual_mode: '"v"'
+

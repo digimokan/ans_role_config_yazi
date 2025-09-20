@@ -42,5 +42,8 @@ keymap = [
   {% endfor %}
 
   # Selection
+  { on = {{ yazi_keymap_toggle_select_file }}, run = ["toggle", "arrow 1"], desc = "Select/deselect file" },
+  { on = {{ yazi_keymap_toggle_select_all_files }}, run = "toggle_all", desc = "Select/deselect all files" },
+  { on = {{ yazi_keymap_visual_mode }}, run = "visual_mode", desc = "Enter visual select mode" },
 ]
 
