@@ -96,6 +96,15 @@ keymap = [
   { on = {{ yazi_keymap_find_files_and_filter }}, run = "filter", desc = "Find files and filter" },
 ]
 
+[tasks]
+
+keymap = [
+  { on = {{ yazi_keymap_show_task_manager }}, run = "show", desc = "Show task manager" },
+  { on = {{ yazi_keymap_show_task_manager }}, run = "hide", desc = "Hide task manager" },
+  { on = {{ yazi_keymap_task_manager_cancel_task }}, run = "cancel", desc = "Cancel task" },
+  { on = {{ yazi_keymap_task_manager_show_log }}, run = "inspect", desc = "Display task log" },
+]
+
 [spot]
 
 keymap = [

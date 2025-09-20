@@ -36,3 +36,7 @@ yazi_keymap_prev_found_file: '"N"'
 yazi_keymap_find_files_recursive: '"s"'
 yazi_keymap_find_files_and_filter: '"x"'
 
+yazi_keymap_show_task_manager: '"e"'
+yazi_keymap_task_manager_cancel_task: '"K"'
+yazi_keymap_task_manager_show_log: '"l"'
+
