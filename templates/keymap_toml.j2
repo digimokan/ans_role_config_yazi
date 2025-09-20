@@ -71,6 +71,13 @@ keymap = [
   { on = {{ yazi_keymap_rename_filename_cursor_start }}, run = "rename --cursor=start", desc = "Rename file(s), cursor at filename start" },
   { on = {{ yazi_keymap_rename_filename_cursor_end }}, run = "rename --cursor=before_ext", desc = "Rename file(s), cursor at filename end" },
   { on = {{ yazi_keymap_rename_filename_cursor_ext }}, run = "rename --cursor=end", desc = "Rename file(s), cursor at extension end" },
+
+  # Files Listing
+  { on = {{ yazi_keymap_show_files_sizes }}, run = "linemode size", desc = "Show files sizes" },
+  { on = {{ yazi_keymap_show_files_mtimes }}, run = "linemode mtime", desc = "Show files mtimes" },
+  { on = {{ yazi_keymap_show_files_create_times }}, run = "linemode btime", desc = "Show files creation times" },
+  { on = {{ yazi_keymap_show_files_perms }}, run = "linemode permissions", desc = "Show files permissions" },
+  { on = {{ yazi_keymap_show_files_owners }}, run = "linemode owner", desc = "Show files owners" },
 ]
 
 [spot]

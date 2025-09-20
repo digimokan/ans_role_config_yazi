@@ -1,0 +1,25 @@
+# Ref: https://yazi-rs.github.io/docs/configuration/keymap
+
+yazi_keymap_yank_file: '"y"'
+yazi_keymap_cut_file: '"d"'
+yazi_keymap_paste_file: '"p"'
+yazi_keymap_paste_symlink_to_file_rel_path: '"P"'
+yazi_keymap_paste_symlink_to_file_abs_path: '"L"'
+yazi_keymap_trash_file: '"b"'
+yazi_keymap_delete_file: '"<Delete>"'
+yazi_keymap_copy_file_path: '"w"'
+
+yazi_keymap_create_file: '[ "c", "t" ]'
+yazi_keymap_create_directory: '[ "c", "k" ]'
+yazi_keymap_rename_file: '[ "c", "w" ]'
+yazi_keymap_rename_filename_keep_ext: '[ "c", "c" ]'
+yazi_keymap_rename_filename_cursor_start: '[ "c", "i" ]'
+yazi_keymap_rename_filename_cursor_end: '[ "c", "e" ]'
+yazi_keymap_rename_filename_cursor_ext: '[ "c", "a" ]'
+
+yazi_keymap_show_files_sizes: '[ "m", "s" ]'
+yazi_keymap_show_files_mtimes: '[ "m", "m" ]'
+yazi_keymap_show_files_create_times: '[ "m", "c" ]'
+yazi_keymap_show_files_perms: '[ "m", "p" ]'
+yazi_keymap_show_files_owners: '[ "m", "o" ]'
+
