@@ -60,6 +60,15 @@ keymap = [
   { on = {{ yazi_keymap_paste_symlink_to_file_abs_path }}, run = ["link", "escape --select"], desc = "Paste absolute symlink to yanked file(s)" },
   { on = {{ yazi_keymap_trash_file }}, run = ["shell '{{ yazi_gnu_coreutils_mv_cmd }} --backup=numbered \"${@}\" \"{{ yazi_user_trash_dir }}/\"'", "escape --select"], desc = "Trash file(s)" },
   { on = {{ yazi_keymap_delete_file }}, run = ["remove --permanently", "escape --select"], desc = "Delete file(s)" },
+
+  # Create/Rename
+  { on = {{ yazi_keymap_create_file }}, run = "create", desc = "Create file" },
+  { on = {{ yazi_keymap_create_directory }}, run = "create --dir", desc = "Create directory" },
+  { on = {{ yazi_keymap_rename_file }}, run = "rename --empty=all", desc = "Rename file(s)" },
+  { on = {{ yazi_keymap_rename_filename_keep_ext }}, run = "rename --empty=stem --cursor=start", desc = "Rename file(s), keep extension(s)" },
+  { on = {{ yazi_keymap_rename_filename_cursor_start }}, run = "rename --cursor=start", desc = "Rename file(s), cursor at start" },
+  { on = {{ yazi_keymap_rename_filename_cursor_end }}, run = "rename --cursor=end", desc = "Rename file(s), cursor at end" },
+  { on = {{ yazi_keymap_rename_filename_cursor_ext }}, run = "rename --cursor=before_ext", desc = "Rename file(s), cursor at extension" },
 ]
 
 [spot]

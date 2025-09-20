@@ -32,3 +32,11 @@ yazi_keymap_paste_symlink_to_file_abs_path: '"L"'
 yazi_keymap_trash_file: '"b"'
 yazi_keymap_delete_file: '"<Delete>"'
 
+yazi_keymap_create_file: '[ "c", "t" ]'
+yazi_keymap_create_directory: '[ "c", "k" ]'
+yazi_keymap_rename_file: '[ "c", "w" ]'
+yazi_keymap_rename_filename_keep_ext: '[ "c", "c" ]'
+yazi_keymap_rename_filename_cursor_start: '[ "c", "i" ]'
+yazi_keymap_rename_filename_cursor_end: '[ "c", "e" ]'
+yazi_keymap_rename_filename_cursor_ext: '[ "c", "a" ]'
+
