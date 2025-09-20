@@ -83,7 +83,8 @@ keymap = [
   { on = {{ yazi_keymap_find_files_in_current_dir }}, run = "find --smart", desc = "Find files in current dir" },
   { on = {{ yazi_keymap_next_found_file }}, run = "find_arrow", desc = "Next found file" },
   { on = {{ yazi_keymap_prev_found_file }}, run = "find_arrow --previous", desc = "Previous found file" },
-  { on = {{ yazi_keymap_search_for_content_in_files }}, run = "search", desc = "Search for content in files" },
+  { on = {{ yazi_keymap_find_files_recursive }}, run = "search", desc = "Find files recursively" },
+  { on = {{ yazi_keymap_find_files_and_filter }}, run = "filter", desc = "Find files and filter" },
 ]
 
 [spot]

@@ -26,5 +26,6 @@ yazi_keymap_show_files_owners: '[ "m", "o" ]'
 yazi_keymap_find_files_in_current_dir: '"/"'
 yazi_keymap_next_found_file: '"n"'
 yazi_keymap_prev_found_file: '"N"'
-yazi_keymap_search_for_content_in_files: '"s"'
+yazi_keymap_find_files_recursive: '"s"'
+yazi_keymap_find_files_and_filter: '"x"'
 
