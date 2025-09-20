@@ -66,9 +66,9 @@ keymap = [
   { on = {{ yazi_keymap_create_directory }}, run = "create --dir", desc = "Create directory" },
   { on = {{ yazi_keymap_rename_file }}, run = "rename --empty=all", desc = "Rename file(s)" },
   { on = {{ yazi_keymap_rename_filename_keep_ext }}, run = "rename --empty=stem --cursor=start", desc = "Rename file(s), keep extension(s)" },
-  { on = {{ yazi_keymap_rename_filename_cursor_start }}, run = "rename --cursor=start", desc = "Rename file(s), cursor at start" },
-  { on = {{ yazi_keymap_rename_filename_cursor_end }}, run = "rename --cursor=end", desc = "Rename file(s), cursor at end" },
-  { on = {{ yazi_keymap_rename_filename_cursor_ext }}, run = "rename --cursor=before_ext", desc = "Rename file(s), cursor at extension" },
+  { on = {{ yazi_keymap_rename_filename_cursor_start }}, run = "rename --cursor=start", desc = "Rename file(s), cursor at filename start" },
+  { on = {{ yazi_keymap_rename_filename_cursor_end }}, run = "rename --cursor=before_ext", desc = "Rename file(s), cursor at filename end" },
+  { on = {{ yazi_keymap_rename_filename_cursor_ext }}, run = "rename --cursor=end", desc = "Rename file(s), cursor at extension end" },
 ]
 
 [spot]
