@@ -99,10 +99,12 @@ keymap = [
 [tasks]
 
 keymap = [
-  { on = {{ yazi_keymap_show_task_manager }}, run = "show", desc = "Show task manager" },
-  { on = {{ yazi_keymap_show_task_manager }}, run = "hide", desc = "Hide task manager" },
-  { on = {{ yazi_keymap_task_manager_cancel_task }}, run = "cancel", desc = "Cancel task" },
-  { on = {{ yazi_keymap_task_manager_show_log }}, run = "inspect", desc = "Display task log" },
+  { on = {{ yazi_keymap_show_tasks_window }}, run = "show", desc = "Show tasks window" },
+  { on = {{ yazi_keymap_keymaps_help_menu }}, run = "help", desc = "Show tasks keymaps help menu" },
+  { on = {{ yazi_keymap_nav_down_one_row }}, run = "arrow 1", desc = "Nav down one row" },
+  { on = {{ yazi_keymap_nav_up_one_row }}, run = "arrow -1", desc = "Nav up one row" },
+  { on = {{ yazi_keymap_tasks_window_cancel_task }}, run = "cancel", desc = "Cancel task" },
+  { on = {{ yazi_keymap_tasks_window_show_log }}, run = "inspect", desc = "Display task log" },
 ]
 
 [spot]
