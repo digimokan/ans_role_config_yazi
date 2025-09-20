@@ -2,7 +2,7 @@
 
 yazi_keymap_escape_or_cancel: '"<Esc>"'
 yazi_keymap_quit: '"q"'
-yazi_keymap_refresh: '"w"'
+yazi_keymap_refresh: '"<Space>"'
 yazi_keymap_nav_down_one_row: '"j"'
 yazi_keymap_nav_up_one_row: '"k"'
 yazi_keymap_nav_last_row: '"G"'
