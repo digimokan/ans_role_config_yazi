@@ -53,12 +53,13 @@ keymap = [
   { on = {{ yazi_keymap_open_file_interactive }}, run = "open --interactive", desc = "Open file (interactive)" },
 
   # Yank/Cut/Delete File(s)
+  # Note: "arrow 1, leave, enter" is workaround to refresh yazi files listing
   { on = {{ yazi_keymap_yank_file }}, run = "yank", desc = "Yank file(s)" },
   { on = {{ yazi_keymap_cut_file }}, run = "yank --cut", desc = "Cut file(s)" },
-  { on = {{ yazi_keymap_paste_file }}, run = "paste", desc = "Paste file(s)" },
-  { on = {{ yazi_keymap_paste_symlink_to_file_rel_path }}, run = "link", desc = "Paste symlink of relative path to file(s)" },
-  { on = {{ yazi_keymap_paste_symlink_to_file_abs_path }}, run = "link --relative", desc = "Paste symlink of absolute path to file(s)" },
-  { on = {{ yazi_keymap_trash_file }}, run = "shell 'mv \"${@}\" \"{{ yazi_user_trash_dir }}/\"'", desc = "Trash file(s)" },
-  { on = {{ yazi_keymap_delete_file }}, run = "remove --permanently", desc = "Delete file(s)" },
+  { on = {{ yazi_keymap_paste_file }}, run = ["paste", "arrow 1", "leave", "enter"], desc = "Paste file(s)" },
+  { on = {{ yazi_keymap_paste_symlink_to_file_rel_path }}, run = ["link", "arrow 1", "leave", "enter"], desc = "Paste symlink of relative path to file(s)" },
+  { on = {{ yazi_keymap_paste_symlink_to_file_abs_path }}, run = ["link --relative", "arrow 1", "leave", "enter"], desc = "Paste symlink of absolute path to file(s)" },
+  { on = {{ yazi_keymap_trash_file }}, run = ["shell 'mv \"${@}\" \"{{ yazi_user_trash_dir }}/\"'", "arrow 1", "leave", "enter"], desc = "Trash file(s)" },
+  { on = {{ yazi_keymap_delete_file }}, run = ["remove --permanently", "arrow 1", "leave", "enter"], desc = "Delete file(s)" },
 ]
 
