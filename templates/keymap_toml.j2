@@ -24,21 +24,21 @@ keymap = [
   { on = {{ yazi_keymap_show_prev_window_file_info }}, run = "spot", desc = "Show preview window file info" },
 
   # Jumps
-  { on = {{ yazi_keymap_jump_to_root_dir }}, run = "cd \"{{ yazi_root_dir }}\", desc = "Go to root dir" },
-  { on = {{ yazi_keymap_jump_to_mnt_dir }}, run = "cd \"{{ yazi_mount_dir }}\", desc = "Go to mnt dir" },
-  { on = {{ yazi_keymap_jump_to_media_dir }}, run = "cd \"{{ yazi_media_dir }}\", desc = "Go to media dir" },
-  { on = {{ yazi_keymap_jump_to_fileserver_dir }}, run = "cd \"{{ yazi_fileserver_dir }}\", desc = "Go to fileserver dir" },
-  { on = {{ yazi_keymap_jump_to_user_home_dir }}, run = "cd \"{{ yazi_user_home_dir }}\", desc = "Go to home dir" },
-  { on = {{ yazi_keymap_jump_to_user_documents_dir }}, run = "cd \"{{ yazi_user_documents_dir }}\", desc = "Go to documents dir" },
-  { on = {{ yazi_keymap_jump_to_user_desktop_dir }}, run = "cd \"{{ yazi_user_desktop_dir }}\", desc = "Go to desktop dir" },
-  { on = {{ yazi_keymap_jump_to_user_download_dir }}, run = "cd \"{{ yazi_user_download_dir }}\", desc = "Go to downloads dir" },
-  { on = {{ yazi_keymap_jump_to_user_music_dir }}, run = "cd \"{{ yazi_user_music_dir }}\", desc = "Go to music dir" },
-  { on = {{ yazi_keymap_jump_to_user_pictures_dir }}, run = "cd \"{{ yazi_user_pictures_dir }}\", desc = "Go to pictures dir" },
-  { on = {{ yazi_keymap_jump_to_user_videos_dir }}, run = "cd \"{{ yazi_user_videos_dir }}\", desc = "Go to videos dir" },
-  { on = {{ yazi_keymap_jump_to_user_trash_dir }}, run = "cd \"{{ yazi_user_trash_dir }}\", desc = "Go to trash dir" },
-  { on = {{ yazi_keymap_jump_to_user_devel_dir }}, run = "cd \"{{ yazi_user_devel_dir }}\", desc = "Go to devel dir" },
+  { on = {{ yazi_keymap_jump_to_root_dir }}, run = "cd \"{{ yazi_root_dir }}\"", desc = "Go to root dir" },
+  { on = {{ yazi_keymap_jump_to_mnt_dir }}, run = "cd \"{{ yazi_mount_dir }}\"", desc = "Go to mnt dir" },
+  { on = {{ yazi_keymap_jump_to_media_dir }}, run = "cd \"{{ yazi_media_dir }}\"", desc = "Go to media dir" },
+  { on = {{ yazi_keymap_jump_to_fileserver_dir }}, run = "cd \"{{ yazi_fileserver_dir }}\"", desc = "Go to fileserver dir" },
+  { on = {{ yazi_keymap_jump_to_user_home_dir }}, run = "cd \"{{ yazi_user_home_dir }}\"", desc = "Go to home dir" },
+  { on = {{ yazi_keymap_jump_to_user_documents_dir }}, run = "cd \"{{ yazi_user_documents_dir }}\"", desc = "Go to documents dir" },
+  { on = {{ yazi_keymap_jump_to_user_desktop_dir }}, run = "cd \"{{ yazi_user_desktop_dir }}\"", desc = "Go to desktop dir" },
+  { on = {{ yazi_keymap_jump_to_user_download_dir }}, run = "cd \"{{ yazi_user_download_dir }}\"", desc = "Go to downloads dir" },
+  { on = {{ yazi_keymap_jump_to_user_music_dir }}, run = "cd \"{{ yazi_user_music_dir }}\"", desc = "Go to music dir" },
+  { on = {{ yazi_keymap_jump_to_user_pictures_dir }}, run = "cd \"{{ yazi_user_pictures_dir }}\"", desc = "Go to pictures dir" },
+  { on = {{ yazi_keymap_jump_to_user_videos_dir }}, run = "cd \"{{ yazi_user_videos_dir }}\"", desc = "Go to videos dir" },
+  { on = {{ yazi_keymap_jump_to_user_trash_dir }}, run = "cd \"{{ yazi_user_trash_dir }}\"", desc = "Go to trash dir" },
+  { on = {{ yazi_keymap_jump_to_user_devel_dir }}, run = "cd \"{{ yazi_user_devel_dir }}\"", desc = "Go to devel dir" },
   {% for keymap in yazi_extra_keymaps_jump_to_dir %}
-  {{ '{ on = ' }}{{ keymap.keys }}{{ ', run = "cd \"' }}{{ keymap.dir }}{{ '\", desc = "' }}{{ keymap.descrip }}{{ '\" },' }}
+{{ '{ on = ' }}{{ keymap.keys }}{{ ', run = "cd \"' }}{{ keymap.dir }}{{ '\"", desc = "' }}{{ keymap.descrip }}{{ '\" },' }}
   {% endfor %}
 ]
 
