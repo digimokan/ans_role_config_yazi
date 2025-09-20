@@ -44,11 +44,15 @@ keymap = [
   # Selection
   { on = {{ yazi_keymap_toggle_select_file }}, run = ["toggle", "arrow 1"], desc = "Select/deselect file" },
   { on = {{ yazi_keymap_toggle_select_all_files }}, run = "toggle_all --state=on", desc = "Select all files" },
-  { on = {{ yazi_keymap_toggle_deselect_all_files }}, run = "toggle_all --state=off", desc = "Deselect all files" },
+  { on = {{ yazi_keymap_toggle_deselect_all_files }}, run = ["toggle_all --state=off", "unyank"], desc = "Deselect all files" },
   { on = {{ yazi_keymap_visual_mode }}, run = "visual_mode", desc = "Enter visual select mode" },
 
   # Open File(s)
   { on = {{ yazi_keymap_open_file }}, run = "open", desc = "Open file" },
   { on = {{ yazi_keymap_open_file_interactive }}, run = "open --interactive", desc = "Open file (interactive)" },
+
+  # Yank/Cut File(s)
+  { on = {{ yazi_keymap_yank_file }}, run = "yank", desc = "Yank file(s)" },
+  { on = {{ yazi_keymap_cut_file }}, run = "yank --cut", desc = "Cut file(s)" },
 ]
 

@@ -23,3 +23,6 @@ yazi_keymap_visual_mode: '"v"'
 yazi_keymap_open_file: '"o"'
 yazi_keymap_open_file_interactive: '"O"'
 
+yazi_keymap_yank_file: '"y"'
+yazi_keymap_cut_file: '"d"'
+
