@@ -54,5 +54,7 @@ keymap = [
   # Yank/Cut File(s)
   { on = {{ yazi_keymap_yank_file }}, run = "yank", desc = "Yank file(s)" },
   { on = {{ yazi_keymap_cut_file }}, run = "yank --cut", desc = "Cut file(s)" },
+  { on = {{ yazi_keymap_paste_file }}, run = "paste", desc = "Paste file(s)" },
+  { on = {{ yazi_keymap_paste_symlink_to_file }}, run = "paste --follow", desc = "Paste symlink to file(s)" },
 ]
 

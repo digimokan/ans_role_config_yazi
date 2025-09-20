@@ -25,4 +25,6 @@ yazi_keymap_open_file_interactive: '"O"'
 
 yazi_keymap_yank_file: '"y"'
 yazi_keymap_cut_file: '"d"'
+yazi_keymap_paste_file: '"p"'
+yazi_keymap_paste_symlink_to_file: '"P"'
 
