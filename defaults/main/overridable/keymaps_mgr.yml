@@ -31,6 +31,7 @@ yazi_keymap_paste_symlink_to_file_rel_path: '"P"'
 yazi_keymap_paste_symlink_to_file_abs_path: '"L"'
 yazi_keymap_trash_file: '"b"'
 yazi_keymap_delete_file: '"<Delete>"'
+yazi_keymap_copy_file_path: '"w"'
 
 yazi_keymap_create_file: '[ "c", "t" ]'
 yazi_keymap_create_directory: '[ "c", "k" ]'

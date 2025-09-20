@@ -60,6 +60,7 @@ keymap = [
   { on = {{ yazi_keymap_paste_symlink_to_file_abs_path }}, run = ["link", "escape --select"], desc = "Paste absolute symlink to yanked file(s)" },
   { on = {{ yazi_keymap_trash_file }}, run = ["shell '{{ yazi_gnu_coreutils_mv_cmd }} --backup=numbered \"${@}\" \"{{ yazi_user_trash_dir }}/\"'", "escape --select"], desc = "Trash file(s)" },
   { on = {{ yazi_keymap_delete_file }}, run = ["remove --permanently", "escape --select"], desc = "Delete file(s)" },
+  { on = {{ yazi_keymap_copy_file_path }}, run = "copy path", desc = "Copy file path" },
 
   # Create/Rename
   { on = {{ yazi_keymap_create_file }}, run = "create", desc = "Create file" },
