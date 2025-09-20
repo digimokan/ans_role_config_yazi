@@ -58,7 +58,7 @@ keymap = [
   { on = {{ yazi_keymap_paste_file }}, run = "paste", desc = "Paste cut/yanked file(s)" },
   { on = {{ yazi_keymap_paste_symlink_to_file_rel_path }}, run = "link", desc = "Paste relative symlink to yanked file(s)" },
   { on = {{ yazi_keymap_paste_symlink_to_file_abs_path }}, run = "link --relative", desc = "Paste absolute symlink to yanked file(s)" },
-  { on = {{ yazi_keymap_trash_file }}, run = "shell 'mv \"${@}\" \"{{ yazi_user_trash_dir }}/\"'", desc = "Trash file(s)" },
+  { on = {{ yazi_keymap_trash_file }}, run = "shell '{{ yazi_gnu_coreutils_mv_cmd }} --backup=numbered \"${@}\" \"{{ yazi_user_trash_dir }}/\"'", desc = "Trash file(s)" },
   { on = {{ yazi_keymap_delete_file }}, run = "remove --permanently", desc = "Delete file(s)" },
 ]
 

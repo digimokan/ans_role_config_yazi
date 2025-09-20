@@ -1,6 +1,9 @@
 # user name of main Yazi user
 yazi_user_name: "user2"
 
+# path or cmd to invoke the GNU version of 'mv' (used to move files to trash)
+yazi_gnu_coreutils_mv_cmd: 'mv'
+
 # snap package command (for OSs that install Yazi via the snap)
 yazi_snap_main_cmd: 'false'
 
