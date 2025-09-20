@@ -17,5 +17,5 @@ yazi_keymap_jump_to_user_devel_dir: '["g", "<Space>"]'
 # list of extra/custom keymaps used for jumps
 yazi_extra_keymaps_jump_to_dir: []
 # yazi_extra_keymaps_jump_to_dir:
-#   - { keys: '[ "g", "o"]', dir: "/var/log/newlog", descrip: "Go to newlog dir" }
+#   - { key_presses: '[ "g", "o"]', dir: "/var/log/newlog", descrip: "Go to newlog dir" }
 
