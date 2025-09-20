@@ -51,10 +51,13 @@ keymap = [
   { on = {{ yazi_keymap_open_file }}, run = "open", desc = "Open file" },
   { on = {{ yazi_keymap_open_file_interactive }}, run = "open --interactive", desc = "Open file (interactive)" },
 
-  # Yank/Cut File(s)
+  # Yank/Cut/Delete File(s)
   { on = {{ yazi_keymap_yank_file }}, run = "yank", desc = "Yank file(s)" },
   { on = {{ yazi_keymap_cut_file }}, run = "yank --cut", desc = "Cut file(s)" },
   { on = {{ yazi_keymap_paste_file }}, run = "paste", desc = "Paste file(s)" },
-  { on = {{ yazi_keymap_paste_symlink_to_file }}, run = "paste --follow", desc = "Paste symlink to file(s)" },
+  { on = {{ yazi_keymap_paste_symlink_to_file_rel_path }}, run = "link", desc = "Paste symlink of relative path to file(s)" },
+  { on = {{ yazi_keymap_paste_symlink_to_file_abs_path }}, run = "link --relative", desc = "Paste symlink of absolute path to file(s)" },
+  { on = {{ yazi_keymap_trash_file }}, run = "remove", desc = "Trash file(s)" },
+  { on = {{ yazi_keymap_delete_file }}, run = "remove --permanently", desc = "Delete file(s)" },
 ]
 
