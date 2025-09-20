@@ -17,5 +17,9 @@ yazi_keymap_show_prev_window_file_info: '"i"'
 
 yazi_keymap_toggle_select_file: '"t"'
 yazi_keymap_toggle_select_all_files: '"V"'
+yazi_keymap_toggle_deselect_all_files: '"u"'
 yazi_keymap_visual_mode: '"v"'
+
+yazi_keymap_open_file: '"o"'
+yazi_keymap_open_file_interactive: '"O"'
 
