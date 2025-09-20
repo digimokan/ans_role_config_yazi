@@ -1,4 +1,17 @@
 # Ref: https://yazi-rs.github.io/docs/configuration/keymap
 
-yazi_keymap_escape_or_cancel: "<Esc>"
+yazi_keymap_escape_or_cancel: '"<Esc>"'
+yazi_keymap_quit: '"q"'
+yazi_keymap_nav_down_one_row: '"j"'
+yazi_keymap_nav_up_one_row: '"k"'
+yazi_keymap_nav_last_row: '"G"'
+yazi_keymap_nav_first_row: '[ "g", "g" ]'
+yazi_keymap_nav_right: '"l"'
+yazi_keymap_nav_left: '"h"'
+yazi_keymap_nav_prev_dir_history: '","'
+yazi_keymap_nav_next_dir_history: '"."'
+
+yazi_keymap_scroll_prev_window_down: '"<Down>"'
+yazi_keymap_scroll_prev_window_up: '"<Up>"'
+yazi_keymap_show_prev_window_file_info: '"i"'
 

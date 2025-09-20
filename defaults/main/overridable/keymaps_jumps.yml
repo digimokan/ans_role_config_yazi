@@ -1,0 +1,21 @@
+# standard keymaps used for jumps
+# see config_paths.yml for directory variables
+yazi_keymap_jump_to_root_dir: '["g", "/"]'
+yazi_keymap_jump_to_mnt_dir: '["g", "t"]'
+yazi_keymap_jump_to_media_dir: '["g", "m"]'
+yazi_keymap_jump_to_fileserver_dir: '["g", "n"]'
+yazi_keymap_jump_to_user_home_dir: '["g", ","]'
+yazi_keymap_jump_to_user_documents_dir: '["g", "."]'
+yazi_keymap_jump_to_user_desktop_dir: '["g", "-"]'
+yazi_keymap_jump_to_user_download_dir: '["g", "w"]'
+yazi_keymap_jump_to_user_music_dir: '["g", "u"]'
+yazi_keymap_jump_to_user_pictures_dir: '["g", "i"]'
+yazi_keymap_jump_to_user_videos_dir: '["g", "v"]'
+yazi_keymap_jump_to_user_trash_dir: '["g", "b"]'
+yazi_keymap_jump_to_user_devel_dir: '["g", "<Space>"]'
+
+# list of extra/custom keymaps used for jumps
+yazi_extra_keymaps_jump_to_dir: []
+# yazi_extra_keymaps_jump_to_dir:
+#   - { keys: '[ "g", "o"]', dir: "/var/log/newlog", descrip: "Go to newlog dir" }
+

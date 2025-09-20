@@ -12,3 +12,18 @@ yazi_user_custom_scripts_dir: "/home/{{ yazi_user_name }}/.local/share/yazi/scri
 # path to text file that will contain the last dir open in Yazi, on quit
 yazi_last_saved_dir_file_path: "/home/{{ yazi_user_name }}/.local/state/yazi/last_saved_dir.txt"
 
+# paths used for jumps and special settings (see downloads.yml, entry_trash.yml)
+yazi_root_dir: "/"
+yazi_mount_dir: "/mnt"
+yazi_media_dir: "/media"
+yazi_fileserver_dir: "/net"
+yazi_user_home_dir: "/home/{{ yazi_user_name }}"
+yazi_user_documents_dir: "{{ yazi_user_home_dir }}/Documents"
+yazi_user_desktop_dir: "{{ yazi_user_home_dir }}/Desktop"
+yazi_user_download_dir: "{{ yazi_user_home_dir }}/Downloads"
+yazi_user_music_dir: "{{ yazi_user_home_dir }}/Music"
+yazi_user_pictures_dir: "{{ yazi_user_home_dir }}/Pictures"
+yazi_user_videos_dir: "{{ yazi_user_home_dir }}/Videos"
+yazi_user_trash_dir: "{{ yazi_user_home_dir }}/.trash"
+yazi_user_devel_dir: "{{ yazi_user_home_dir }}/Devel"
+
