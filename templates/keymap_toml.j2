@@ -72,6 +72,7 @@ keymap = [
   { on = {{ yazi_keymap_rename_filename_cursor_start }}, run = "rename --cursor=start", desc = "Rename file(s), cursor at filename start" },
   { on = {{ yazi_keymap_rename_filename_cursor_end }}, run = "rename --cursor=before_ext", desc = "Rename file(s), cursor at filename end" },
   { on = {{ yazi_keymap_rename_filename_cursor_ext }}, run = "rename --cursor=end", desc = "Rename file(s), cursor at extension end" },
+  { on = {{ yazi_keymap_change_file_permissions }}, run = "shell --interactive --cursor=6 'chmod  \"${@}\"'", desc = "Change file(s) permissions" },
 
   # Files-Listing Stats
   { on = {{ yazi_keymap_show_files_sizes }}, run = "linemode size", desc = "Show files sizes" },

@@ -16,6 +16,7 @@ yazi_keymap_rename_filename_keep_ext: '[ "c", "c" ]'
 yazi_keymap_rename_filename_cursor_start: '[ "c", "i" ]'
 yazi_keymap_rename_filename_cursor_end: '[ "c", "e" ]'
 yazi_keymap_rename_filename_cursor_ext: '[ "c", "a" ]'
+yazi_keymap_change_file_permissions: '"="'
 
 yazi_keymap_show_files_sizes: '[ "m", "s" ]'
 yazi_keymap_show_files_mtimes: '[ "m", "m" ]'
