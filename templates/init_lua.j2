@@ -14,7 +14,7 @@ require("{{ yazi_user_plugin_script_downloads_sort_path | dirname | basename | s
 Status:children_add(function(self)
   local h = self._current.hovered
   if h and h.link_to then
-    return " -> " .. tostring(h.link_to)
+    return ui.Line { ui.Span(" -> " .. tostring(h.link_to)):fg("cyan") }
   else
     return ""
   end
