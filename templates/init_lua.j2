@@ -4,7 +4,7 @@
 
 -- custom user plugin to sort downloads dir by mtime
 {% if yazi_file_sort_downloads_dir_by_mtime %}
-require("downloads_dir_file_sort"):setup()
+require("{{ yazi_user_plugin_script_downloads_sort_path | dirname | basename | splitext | first }}"):setup()
 {% else %}
 -- require("downloads_dir_file_sort"):setup()
 {% endif %}
