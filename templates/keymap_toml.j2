@@ -13,6 +13,8 @@ keymap = [
   { on = {{ yazi_keymap_refresh }}, run = ["arrow 1", "leave", "enter", "arrow -1", "escape --select"], desc = "Refresh file listing" },
   { on = {{ yazi_keymap_nav_down_one_row }}, run = "arrow 1", desc = "Nav down one row" },
   { on = {{ yazi_keymap_nav_up_one_row }}, run = "arrow -1", desc = "Nav up one row" },
+  { on = {{ yazi_keymap_nav_down_one_page }}, run = "arrow 100%", desc = "Nav down one page" },
+  { on = {{ yazi_keymap_nav_up_one_page }}, run = "arrow -100%", desc = "Nav up one page" },
   { on = {{ yazi_keymap_nav_last_row }}, run = "arrow bot", desc = "Nav to last row" },
   { on = {{ yazi_keymap_nav_first_row }}, run = "arrow top", desc = "Nav to first row" },
   { on = {{ yazi_keymap_nav_right }}, run = "enter", desc = "Nav right" },
