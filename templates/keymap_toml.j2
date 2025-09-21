@@ -115,3 +115,10 @@ keymap = [
   { on = {{ yazi_keymap_escape_or_cancel }}, run = "close", desc = "Close preview window file info" },
 ]
 
+[input]
+
+prepend_keymap = [
+  # Don't use "vi mode" for input, which makes escape exit when pressed once
+  { on = "<Esc>", run = "close", desc = "Cancel input" },
+]
+
