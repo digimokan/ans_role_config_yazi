@@ -1,6 +1,9 @@
 - name: "Create Yazi config files"
   ansible.builtin.include_tasks: yazi_config.yml
 
+- name: "Create user plugins"
+  ansible.builtin.include_tasks: plugins.yml
+
 - name: "Create user custom scripts and supporting files"
   ansible.builtin.include_tasks: custom_scripts.yml
 

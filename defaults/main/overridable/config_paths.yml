@@ -7,7 +7,13 @@ yazi_keymap_file_path: "/home/{{ yazi_user_name }}/.config/yazi/keymap.toml"
 yazi_default_persistent_image_cache_dir: "/home/{{ yazi_user_name }}/.local/state/yazi/image_cache"
 yazi_default_temp_image_cache_dir: "/tmp/yazi_image_cache"
 
-# path to user custom scripts dir
+# path to main user Yazi init.lua
+yazi_user_init_lua_path: "/home/{{ yazi_user_name }}/.config/yazi/init.lua"
+
+# path to user plugins lua scripts
+yazi_user_plugin_script_downloads_sort_path: "/home/{{ yazi_user_name }}/.config/yazi/plugins/downloads_dir_file_sort_mtime.yazi/main.lua"
+
+# path to user custom shell scripts dir
 yazi_user_custom_scripts_dir: "/home/{{ yazi_user_name }}/.local/share/yazi/scripts"
 
 # path to text file that will contain the last dir open in Yazi, on quit

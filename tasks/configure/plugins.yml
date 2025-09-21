@@ -1,0 +1,29 @@
+- name: "Create main Yazi user init.lua at '{{ yazi_user_init_lua_path }}'"
+  ansible.builtin.template:
+    dest: "{{ yazi_user_init_lua_path }}"
+    src: "init_lua.j2"
+  become: true
+  become_user: "{{ yazi_user_name }}"
+
+- name: "Create individual user plugins directories, if not exist"
+  ansible.builtin.file:
+    path: "{{ plugin_script_path | dirname }}"
+    state: directory
+  become: true
+  become_user: "{{ yazi_user_name }}"
+  loop:
+    - "{{ yazi_user_plugin_script_downloads_sort_path }}"
+  loop_control:
+    loop_var: plugin_script_path
+
+- name: "Create individual user plugin scripts"
+  ansible.builtin.template:
+    dest: "{{ user_plugin.script_path }}"
+    src: "{{ user_plugin.template_path }}"
+  become: true
+  become_user: "{{ yazi_user_name }}"
+  loop:
+    - { script_path: "{{ yazi_user_plugin_script_downloads_sort_path }}", template_path: "downloads_dir_file_sort_main_lua.j2" }
+  loop_control:
+    loop_var: user_plugin
+

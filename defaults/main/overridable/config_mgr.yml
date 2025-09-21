@@ -20,6 +20,9 @@ yazi_file_sort_case_sensitive: "false"
 # whether to sort displayed files with directories listed first, in all columns
 yazi_file_sort_list_dirs_first: "true"
 
+# whether to sort the downloads directory by mtime
+yazi_file_sort_downloads_dir_by_mtime: false
+
 # whether to show hidden files, in all columns
 yazi_file_list_show_hidden_files: "true"
 
