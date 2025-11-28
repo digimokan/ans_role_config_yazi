@@ -28,40 +28,40 @@ image_quality = {{ yazi_image_preview_quality }}
 
 text_file_openers = [
 {% for prog in yazi_open_text_files_with_console %}
-{ run = "{{ yazi_start_term_emulator }} {{ yazi_term_arg_exec }} \"{{ prog }} '${@}'\"", block = false, orphan = true, for = "unix" },
+{ run = "{{ yazi_start_term_emulator }} {{ yazi_term_arg_exec }} \"{{ prog }} '${@}'\"", block = false, orphan = true, for = "unix", desc = "{{ prog }}" },
 {% endfor %}
 {% for prog in yazi_open_text_files_with_gui %}
-{ run = "{{ prog }} \"${@}\"", block = false, orphan = true, for = "unix" },
+{ run = "{{ prog }} \"${@}\"", block = false, orphan = true, for = "unix", desc = "{{ prog }}" },
 {% endfor %}
 ]
 
 image_file_openers = [
 {% for prog in yazi_open_image_files_with %}
-{ run = "{{ prog }} \"${@}\"", block = false, orphan = true, for = "unix" },
+{ run = "{{ prog }} \"${@}\"", block = false, orphan = true, for = "unix", desc = "{{ prog }}" },
 {% endfor %}
 ]
 
 office_file_openers = [
 {% for prog in yazi_open_office_files_with %}
-{ run = "{{ prog }} \"${@}\"", block = false, orphan = true, for = "unix" },
+{ run = "{{ prog }} \"${@}\"", block = false, orphan = true, for = "unix", desc = "{{ prog }}" },
 {% endfor %}
 ]
 
 pdf_file_openers = [
 {% for prog in yazi_open_pdf_files_with %}
-{ run = "{{ prog }} \"${@}\"", block = false, orphan = true, for = "unix" },
+{ run = "{{ prog }} \"${@}\"", block = false, orphan = true, for = "unix", desc = "{{ prog }}" },
 {% endfor %}
 ]
 
 audio_file_openers = [
 {% for prog in yazi_open_audio_files_with %}
-{ run = "{{ prog }} \"${@}\"", block = false, orphan = true, for = "unix" },
+{ run = "{{ prog }} \"${@}\"", block = false, orphan = true, for = "unix", desc = "{{ prog }}" },
 {% endfor %}
 ]
 
 video_file_openers = [
 {% for prog in yazi_open_video_files_with %}
-{ run = "{{ prog }} \"${@}\"", block = false, orphan = true, for = "unix" },
+{ run = "{{ prog }} \"${@}\"", block = false, orphan = true, for = "unix", desc = "{{ prog }}" },
 {% endfor %}
 ]
 
