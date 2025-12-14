@@ -11,6 +11,7 @@
     state: directory
   become: true
   become_user: "{{ yazi_user_name }}"
+  changed_when: false
 
 - name: "Configure all Yazi behavior in '{{ yazi_config_file_path }}'"
   ansible.builtin.template:
